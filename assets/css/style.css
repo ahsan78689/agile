@@ -470,6 +470,7 @@ a.scroll-top {
     align-items: center;
     justify-content: center;
     background: #2c2a73;
+    color: #fff;
 }
 .chat {
     position: absolute;
@@ -482,6 +483,7 @@ a.scroll-top {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 .chat i {
