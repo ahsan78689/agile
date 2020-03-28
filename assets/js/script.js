@@ -1,6 +1,19 @@
 (function ($){
 	'use strict';
+	// if ($(window).width() > 767 ) {
+	// 	new WOW().init();
+	// }
 
+	var wow = new WOW(
+      {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       false,       // default
+      live:         true        // default
+    }
+    )
+    wow.init();
 	/*============== Smooth Scroll ==============*/
   // Select all links with hashes
   $('a[href*="#"]')
