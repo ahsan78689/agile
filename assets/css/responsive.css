@@ -1,17 +1,16 @@
+@media(min-width: 1400px) {
+    .container {
+        max-width: 1220px;
+    }
+}
+
 @media(max-width: 1440px) {
     .intro-right-bg {
         background-position-x: 105%;
-        /* background-size: 54%; */
     }
 
     .intro-left {
         max-width: 85%;
-    }
-}
-
-@media(min-width: 1400px) {
-    .container {
-        max-width: 1220px;
     }
 }
 
@@ -20,8 +19,21 @@
         padding-right: 5px;
     }
 
+    .intro-left {
+        max-width: 72%;
+    }
+
     .service-item img {
         max-height: 210px;
+    }
+
+    /* Functions Style */
+    .function-item .function-content {
+        height: 70%;
+    }
+
+    .function-item .function-item-title {
+        font-size: 22px;
     }
 }
 
@@ -95,10 +107,34 @@
     .footer-column-title {
         width: 100%;
     }
+
+    /* Functions Style */
+    .function-item .function-item-title {
+        font-size: 18px;
+        margin: 12px 0 8px 0;
+    }
+
+    .function-item .function-content p {
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    .function-item .function-item-cta .btn-primary {
+        padding: 8px 20px;
+    }
 }
 
 @media(max-width: 767px) {
-    /* Top bar */ .top-right {
+    img{
+        width: 100%;
+    }
+
+    /*.function-item img {
+        width: 100%;
+    }*/
+    
+    /* Top bar */ 
+    .top-right {
         padding-left: 0;
     }
 
@@ -113,6 +149,10 @@
 
     .welcome-msg {
         text-align: center;
+    }
+
+    .service-item img {
+        max-height: 100%;
     }
 
     /* Footer */
@@ -144,6 +184,31 @@
     }
 
     .address, .contact {
+        justify-content: center;
+    }
+
+    /* Functions style */
+    .page-header {
+        background-image: none;
+        padding-bottom: 0;
+    }
+
+    .page-header-left {
+        margin-top: 0;
+    }
+
+    #agile-insights .container:before, #agile-insights .container:after {
+        content: none;
+    }
+
+    .agile-insights-right {
+        order: 2;
+    }
+
+    /* Functions Style */
+    .function-item .function-content {
+        height: 100%;
+        transform: translateY(0);
         justify-content: center;
     }
 }

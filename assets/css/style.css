@@ -54,11 +54,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'NexaBold';
+    src: url('../fonts/Nexa Bold.eot');
+    src: url('../fonts/Nexa Bold.woff') format('woff'), url('../fonts/Nexa Bold.ttf') format('truetype'), url('../fonts/Nexa Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General */
 body {
     font-family: "Helvetica";
     font-weight: normal;
     font-style: normal;
+    color: #000;
 }
 
 img {
@@ -75,7 +84,7 @@ a {
     font-family: "Poppins";
     font-size: 14px;
     min-width: 120px;
-    min-height: 42px;
+    /* min-height: 42px; */
 }
 
 .btn-primary {
@@ -113,8 +122,8 @@ a {
 }
 
 .section-title {
-    font-family: "HelveticaNeue-CondBlack";
-    font-size: 36px;
+    font-family: "NexaBold";
+    font-size: 48px;
     padding-bottom: 15px;
     margin-bottom: 30px;
     position: relative;
@@ -129,6 +138,11 @@ a {
     width: 85px;
     height: 6px;
     background-color: #295794;
+}
+
+.home .section-title{
+    font-family: "HelveticaNeue-CondBlack";
+    font-size: 36px;
 }
 
 .section-description {
@@ -489,3 +503,181 @@ a.scroll-top {
 .chat i {
     font-size: 16px;
 }
+
+
+/* Functions Style */
+.page-header {
+    background-image: url("../images/inner-page-top-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 250px;
+}
+
+.page-header .row {
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header-left {
+    margin-top: 125px;
+}
+
+.page-title {
+    font-family: NexaBold;
+    font-size: 60px;
+    color: #2c2a73;
+}
+
+.site-breadcrum {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.site-breadcrum li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.site-breadcrum li:not(:last-child):after {
+    content: "--";
+    position: absolute;
+    right: -15px;
+}
+
+.site-breadcrum a {
+    color: #000;
+}
+
+.inner-title {
+    font-family: "NexaBold";
+    font-size: 40px;
+    color: #2c2a73;
+}
+
+#agile-insights .container {
+    position: relative;
+}
+
+#agile-insights .container:before, #agile-insights .container:after{
+    content: '';
+    position: absolute;
+    width: 26%;
+    height: 100%;
+}
+
+#agile-insights .container:before {
+    top: -18%;
+    left: -4%;;
+    border-left: 10px solid #2c2a73;
+    border-top: 10px solid #2c2a73;
+}
+
+#agile-insights .container:after{
+    bottom: 0;
+    right: -4%;
+    border-right: 10px solid #2c2a73;
+    border-bottom: 10px solid #2c2a73;
+}
+
+.function-item {
+    margin-bottom: 30px;
+}
+
+.function-item .function-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.function-item img {
+    border-radius: 10px;
+}
+
+.function-item .function-item-title {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+}
+
+.function-item .function-content {
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poppins;
+    text-align: center;
+    color: #fff;
+    background: rgba(44, 42, 115, 0.5);
+    transform: translateY(28%);
+    transition: 1s all ease;
+    border-radius: 10px;
+}
+
+.function-item .function-content:hover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+}
+
+.function-item .function-content p {
+    text-transform: uppercase;
+    line-height: 2;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+.function-item .function-item-cta .btn-primary {
+    background-color: rgba(255, 255, 253, 0.8);
+    color: #2c2a73;
+    padding: 10px 30px;
+}
+
+
+/* Services Style */
+.solution-item {
+    padding: 0 12px;
+    margin-bottom: 24px;
+}
+
+.solution-image {
+    border: 15px solid #e1e1e1;
+}
+
+.solution-content {
+    font-family: "NexaBold";
+    text-align: center;
+    padding: 22px;
+    box-shadow: 0px 2px 7px 1px #b6b6b6;
+}
+
+.solution-item-title {
+    font-size: 30px;
+    color: #2c2a73;
+    margin: 0 0 20px 0;
+}
+
+.solution-content p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.solution-item-cta {
+    margin: 30px 0;
+}
+
+.solutions .inner-title {
+    margin-bottom: 40px;
+}
+
+.solution-item-cta .btn-primary {
+    padding: 8px 40px;
+}
+
