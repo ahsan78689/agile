@@ -90,7 +90,7 @@
     }
 
     /* Signin */
-    .signin-form-wrapper {
+    .sign-in-up-form-wrapper {
         padding: 50px 70px 90px;
     }
 }
@@ -209,7 +209,7 @@
         background: url("../images/sign-in-up-bg-image.png");
         background-repeat: no-repeat;
     }
-    .signin-form-wrapper {
+    .sign-in-up-form-wrapper {
         background: rgba(35, 110, 170, 0.9);
     }
 }
@@ -384,7 +384,7 @@
     }
 
     /* Signin */
-    #signin {
+    #signin, #signup {
         padding: 0;
         margin: 0 0 0;
         height: 100%;
@@ -405,7 +405,7 @@
     }
 
     /* Signin */
-    .signin-form-wrapper {
+    .sign-in-up-form-wrapper {
         padding: 50px 20px 50px;
     }
 }

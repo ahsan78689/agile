@@ -721,17 +721,17 @@ a.scroll-top {
 }
 
 /* Sign in Style */
-#signin {
+#signin, #signup {
     margin: 0;
     padding: 100px 0;
     height: 1100px;
 }
 
-.signin{
+.signin, .signup{
     background: #236eaa;
 }
 
-.signin-form-content form > div {
+.sign-in-up-form-content form > div {
     display: flex;
     align-items: center;
     background-color: #d7d7d7;
@@ -741,16 +741,16 @@ a.scroll-top {
     margin-bottom: 15px;
 }
 
-.signin-form-content input:focus {
+.sign-in-up-form-content input:focus {
     outline: none;
 }
 
-.signin-form-content form i {
+.sign-in-up-form-content form i {
     margin-right: 15px;
     color: #565656;
 }
 
-.signin-form-content input:not([type="submit"]) {
+.sign-in-up-form-content input:not([type="submit"]) {
     background: none;
     border: none;
     width: 100%;
@@ -761,32 +761,32 @@ a.scroll-top {
     padding: 8px 0;
 }
 
-.signin-form-wrapper {
+.sign-in-up-form-wrapper {
     background: #236eaa;
     color: #fff;
     padding: 50px 125px 125px;
     box-shadow: 0px 10px 15px 5px #1d5f94;
 }
 
-.signin-form .signin-form-header {
+.sign-in-up-form .sign-in-up-form-header {
     text-align: center;
 }
 
-.signin-form .signin-form-header .form-subtitle {
+.sign-in-up-form .sign-in-up-form-header .form-subtitle {
     margin-bottom: 30px;
     font-family: Raleway;
     font-size: 18px;
     font-weight: 600;
 }
 
-.signin-form .signin-form-header .form-title {
+.sign-in-up-form .sign-in-up-form-header .form-title {
     margin-bottom: 25px;
     font-family: Poppins;
     font-size: 30px;
     font-weight: 500;
 }
 
-.signin-form .signin-form-header .form-title:after {
+.sign-in-up-form .sign-in-up-form-header .form-title:after {
     content: '';
     display: block;
     border-bottom: 3px solid;
@@ -794,15 +794,15 @@ a.scroll-top {
     margin: 5px auto 0;
 }
 
-.signin-form-content {
+.sign-in-up-form-content {
     margin-bottom: 70px;
 }
 
-.signin-form-content form {
+.sign-in-up-form-content form {
     margin-bottom: 20px;
 }
 
-.signin-form .btn-submit {
+.sign-in-up-form .btn-submit {
     border: 2px solid #fff;
     width: 100%;
     background: #2c2a73;
@@ -819,7 +819,7 @@ a.scroll-top {
     background: #236eaa;
 }
 
-.signin-form .signin-options {
+.signin-options {
     font-family: Montserrat;
     font-size: 14px;
     display: flex;
@@ -827,11 +827,11 @@ a.scroll-top {
     justify-content: center;
 }
 
-.signin-form .signin-options div {
+.signin-options div {
     width: 46%;
 }
 
-.signin-form .signin-options .forgot-pass {
+.signin-options .forgot-pass {
     text-align: end;
 }
 
@@ -854,11 +854,11 @@ a.scroll-top {
     text-decoration: underline;
 }
 
-.signin-form-footer {
+.sign-in-up-form-footer {
     text-align: center;
 }
 
-.signin-form-footer .login-social a {
+.sign-in-up-form-footer .login-social a {
     width: 100%;
     margin-bottom: 18px;
     color: #fff;
@@ -867,26 +867,26 @@ a.scroll-top {
     font-weight: 600;
 }
 
-.signin-form-footer .btn-facebook {
+.sign-in-up-form-footer .btn-facebook {
     background-color: #3b5999;
     border-color: #3b5999;
 }
 
-.signin-form-footer .register-now {
+.sign-in-up-form-footer .register-now {
     margin-top: 8px;
     font-size: 14px;
 }
 
-.signin-form-footer .register-now p {
+.sign-in-up-form-footer .register-now p {
     margin-bottom: 0;
     font-family: Raleway;
 }
 
-.signin-form-footer .register-now p:first-child {
+.sign-in-up-form-footer .register-now p:first-child {
     font-size: 16px;
 }
 
-.signin-form-footer .register-now a {
+.sign-in-up-form-footer .register-now a {
     color: #2c2a73;
     text-decoration: underline;
 }
