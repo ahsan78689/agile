@@ -1,6 +1,12 @@
 @media(min-width: 1400px) {
     .container {
-        max-width: 1220px;
+        /* max-width: 1220px; */
+    }
+}
+@media(min-width: 992px){
+    .sign-in-up-bg {
+        background: url("../images/sign-in-up-bg-image-desktop.png");
+        background-repeat: no-repeat;
     }
 }
 
@@ -15,6 +21,15 @@
 }
 
 @media(max-width: 1199px) {
+    .section-title {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .page-title {
+        font-size: 45px;
+    }
+
     .main-navigation .navbar-nav .nav-item.menu-cta {
         padding-right: 5px;
     }
@@ -35,6 +50,49 @@
     .function-item .function-item-title {
         font-size: 22px;
     }
+
+    .intro-title {
+        font-size: 50px;
+    }
+
+    .intro-sub-title {
+        font-size: 26px;
+    }
+
+    .home .section-title {
+        font-size: 26px;
+    }
+
+    .footer-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .footer-column-title {
+        font-size: 24px;
+    }
+
+    .footer-inner {
+        font-size: 16px;
+    }
+
+    /* Solutions */
+    .solution-item-title {
+        font-size: 26px;
+    }
+
+    .solution-content p {
+        font-size: 16px;
+    }
+
+    .inner-title {
+        font-size: 35px;
+    }
+
+    /* Signin */
+    .signin-form-wrapper {
+        padding: 50px 70px 90px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -44,6 +102,12 @@
         display: none;
     }
 
+    .welcome-msg {
+        text-align: center;
+        font-size: 16px;
+        max-width: 88%;
+    }
+
     /* Top bar */
     .top-right a {
         display: block;
@@ -51,6 +115,14 @@
 
     .top-social:before {
         content: none;
+    }
+
+    .social-list li:first-child {
+        padding-left: 0;
+    }
+
+    .social-list li {
+        padding: 0 6px;
     }
 
     /* Main Nav */
@@ -108,6 +180,15 @@
         width: 100%;
     }
 
+    .footer-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer-column-title {
+        font-size: 20px;
+    }
+
     /* Functions Style */
     .function-item .function-item-title {
         font-size: 18px;
@@ -122,18 +203,43 @@
     .function-item .function-item-cta .btn-primary {
         padding: 8px 20px;
     }
+
+    /* Sign in */
+    .sign-in-up-bg {
+        background: url("../images/sign-in-up-bg-image.png");
+        background-repeat: no-repeat;
+    }
+    .signin-form-wrapper {
+        background: rgba(35, 110, 170, 0.9);
+    }
 }
 
 @media(max-width: 767px) {
-    img{
+    img {
         width: 100%;
     }
 
-    /*.function-item img {
-        width: 100%;
-    }*/
-    
-    /* Top bar */ 
+    .function-item img {
+        /* width: 100%; */
+    }
+
+    .page-title {
+        font-size: 35px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-title:after {
+        width: 58px;
+    }
+
+    .inner-title {
+        font-size: 26px;
+    }
+
+    /* Top bar */
     .top-right {
         padding-left: 0;
     }
@@ -147,12 +253,12 @@
         width: 40%;
     }
 
-    .welcome-msg {
-        text-align: center;
-    }
-
     .service-item img {
         max-height: 100%;
+    }
+
+    .about-right {
+        width: 100%;
     }
 
     /* Footer */
@@ -205,11 +311,19 @@
         order: 2;
     }
 
-    /* Functions Style */
     .function-item .function-content {
         height: 100%;
         transform: translateY(0);
         justify-content: center;
+    }
+
+    /* Solutions style */
+    .solutions .inner-title {
+        margin-bottom: 20px;
+    }
+
+    .solution-item-title {
+        font-size: 20px;
     }
 }
 
@@ -220,6 +334,7 @@
 
     .welcome-msg {
         margin-bottom: 8px;
+        max-width: 100%;
     }
 
     .top-right a {
@@ -258,5 +373,39 @@
 
     .footer-column-4 {
         text-align: center;
+    }
+
+    .address, .contact {
+        display: block;
+    }
+
+    .address-icon, .contact-icon {
+        margin-right: 0;
+    }
+
+    /* Signin */
+    #signin {
+        padding: 0;
+        margin: 0 0 0;
+        height: 100%;
+    }
+}
+
+@media(max-width: 480px) {
+    .intro-title {
+        font-size: 35px;
+    }
+
+    .intro-sub-title {
+        font-size: 20px;
+    }
+
+    .home .section-title {
+        font-size: 20px;
+    }
+
+    /* Signin */
+    .signin-form-wrapper {
+        padding: 50px 20px 50px;
     }
 }

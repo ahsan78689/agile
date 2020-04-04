@@ -54,11 +54,46 @@
     font-style: normal;
 }
 
+/* NexaBold */
 @font-face {
     font-family: 'NexaBold';
     src: url('../fonts/Nexa Bold.eot');
     src: url('../fonts/Nexa Bold.woff') format('woff'), url('../fonts/Nexa Bold.ttf') format('truetype'), url('../fonts/Nexa Bold.svg') format('svg');
     font-weight: normal;
+    font-style: normal;
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Raleway */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.eot');
+    src: url('../fonts/Raleway-SemiBold.woff') format('woff'), url('../fonts/Raleway-SemiBold.ttf') format('truetype'), url('../fonts/Raleway-SemiBold.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Black.eot');
+    src: url('../fonts/Raleway-Black.woff') format('woff'), url('../fonts/Raleway-Black.ttf') format('truetype'), url('../fonts/Raleway-Black.svg') format('svg');
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -79,8 +114,8 @@ a {
 }
 
 .btn {
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 8px 20px;
+    border-radius: 30px;
     font-family: "Poppins";
     font-size: 14px;
     min-width: 120px;
@@ -140,7 +175,7 @@ a {
     background-color: #295794;
 }
 
-.home .section-title{
+.home .section-title {
     font-family: "HelveticaNeue-CondBlack";
     font-size: 36px;
 }
@@ -156,11 +191,15 @@ a {
     color: #fff;
 }
 
+.welcome-msg {
+    font-size: 18px;
+}
+
 .top-social:before {
     content: '';
     position: absolute;
     top: 0;
-    left: -1px;
+    left: -1.5%;
     height: 100%;
     width: 4px;
     background-color: #b7b7b7;
@@ -203,7 +242,7 @@ a {
 }
 
 .top-email i, .top-contact i {
-    margin-right: 10px;
+    margin-right: 3%;
 }
 
 /* --------------------- */
@@ -326,6 +365,7 @@ a {
     font-size: 18px;
     margin-top: 20px;
 }
+
 .about-right-cta a {
     min-width: 210px;
 }
@@ -486,6 +526,7 @@ a.scroll-top {
     background: #2c2a73;
     color: #fff;
 }
+
 .chat {
     position: absolute;
     right: 5%;
@@ -503,7 +544,6 @@ a.scroll-top {
 .chat i {
     font-size: 16px;
 }
-
 
 /* Functions Style */
 .page-header {
@@ -561,7 +601,7 @@ a.scroll-top {
     position: relative;
 }
 
-#agile-insights .container:before, #agile-insights .container:after{
+#agile-insights .container:before, #agile-insights .container:after {
     content: '';
     position: absolute;
     width: 26%;
@@ -570,12 +610,12 @@ a.scroll-top {
 
 #agile-insights .container:before {
     top: -18%;
-    left: -4%;;
-    border-left: 10px solid #2c2a73;
+    left: -4%;
+    ; border-left: 10px solid #2c2a73;
     border-top: 10px solid #2c2a73;
 }
 
-#agile-insights .container:after{
+#agile-insights .container:after {
     bottom: 0;
     right: -4%;
     border-right: 10px solid #2c2a73;
@@ -640,7 +680,6 @@ a.scroll-top {
     padding: 10px 30px;
 }
 
-
 /* Services Style */
 .solution-item {
     padding: 0 12px;
@@ -681,3 +720,173 @@ a.scroll-top {
     padding: 8px 40px;
 }
 
+/* Sign in Style */
+#signin {
+    margin: 0;
+    padding: 100px 0;
+    height: 1100px;
+}
+
+.signin{
+    background: #236eaa;
+}
+
+.signin-form-content form > div {
+    display: flex;
+    align-items: center;
+    background-color: #d7d7d7;
+    border: 2px solid #fff;
+    padding: 0 25px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.signin-form-content input:focus {
+    outline: none;
+}
+
+.signin-form-content form i {
+    margin-right: 15px;
+    color: #565656;
+}
+
+.signin-form-content input:not([type="submit"]) {
+    background: none;
+    border: none;
+    width: 100%;
+    color: #565656;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.signin-form-wrapper {
+    background: #236eaa;
+    color: #fff;
+    padding: 50px 125px 125px;
+    box-shadow: 0px 10px 15px 5px #1d5f94;
+}
+
+.signin-form .signin-form-header {
+    text-align: center;
+}
+
+.signin-form .signin-form-header .form-subtitle {
+    margin-bottom: 30px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.signin-form .signin-form-header .form-title {
+    margin-bottom: 25px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.signin-form .signin-form-header .form-title:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid;
+    width: 50%;
+    margin: 5px auto 0;
+}
+
+.signin-form-content {
+    margin-bottom: 70px;
+}
+
+.signin-form-content form {
+    margin-bottom: 20px;
+}
+
+.signin-form .btn-submit {
+    border: 2px solid #fff;
+    width: 100%;
+    background: #2c2a73;
+    color: #fff;
+    box-shadow: 0px 6px 8px 1px #395a74;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 900;
+    padding: 6.5px 20px;
+    margin-top: 42px;
+}
+
+.btn-submit:hover {
+    background: #236eaa;
+}
+
+.signin-form .signin-options {
+    font-family: Montserrat;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-form .signin-options div {
+    width: 46%;
+}
+
+.signin-form .signin-options .forgot-pass {
+    text-align: end;
+}
+
+.signin-options div a, .signin-options div a i {
+    color: #fff;
+}
+
+.signin-options div a i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.signin-options div:first-child a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signin-options div span {
+    text-decoration: underline;
+}
+
+.signin-form-footer {
+    text-align: center;
+}
+
+.signin-form-footer .login-social a {
+    width: 100%;
+    margin-bottom: 18px;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.signin-form-footer .btn-facebook {
+    background-color: #3b5999;
+    border-color: #3b5999;
+}
+
+.signin-form-footer .register-now {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.signin-form-footer .register-now p {
+    margin-bottom: 0;
+    font-family: Raleway;
+}
+
+.signin-form-footer .register-now p:first-child {
+    font-size: 16px;
+}
+
+.signin-form-footer .register-now a {
+    color: #2c2a73;
+    text-decoration: underline;
+}
