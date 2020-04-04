@@ -731,6 +731,10 @@ a.scroll-top {
     background: #236eaa;
 }
 
+.signin .footer-inner, .signup .footer-inner {
+    background-image: none;
+}
+
 .sign-in-up-form-content form > div {
     display: flex;
     align-items: center;
